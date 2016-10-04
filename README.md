@@ -1,4 +1,4 @@
-# Hotshell Util
+# Hotshell Util [![npm version](https://badge.fury.io/js/hotshell-util.svg)](https://badge.fury.io/js/hotshell-util)
 
 > A collection of common [Hotshell](http://julienmoumne.github.io/hotshell) patterns
 
