@@ -46,7 +46,7 @@ You can add `hotshell-util` in your `package.json` or install it manually using 
 
 You can then import it using `var util = require('./node_modules/hotshell-util')`.
 
-#### Without Node
+### Without Node
 
 Hotshell does not yet support downloading npm modules, see [Hotshell issue #11](https://github.com/julienmoumne/hotshell/issues/11).
 
