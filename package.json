@@ -1,0 +1,32 @@
+{
+  "name": "hotshell-util",
+  "version": "0.1.0",
+  "description": "A collection of common Hotshell patterns",
+  "main": "util.hotshell.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julienmoumne/hotshell-util"
+  },
+  "keywords": [
+    "hotshell",
+    "common",
+    "util",
+    "shell",
+    "bash",
+    "console",
+    "interactive",
+    "hotkey"
+  ],
+  "author": "Julien Moumné <julien@moumne.com> (http://moumne.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julienmoumne/hotshell-util/issues"
+  },
+  "homepage": "https://github.com/julienmoumne/hotshell-util"
+}
