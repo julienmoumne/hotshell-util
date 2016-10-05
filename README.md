@@ -2,18 +2,29 @@
 
 > A collection of common [Hotshell](http://julienmoumne.github.io/hotshell) patterns
 
+[Hotshell](http://julienmoumne.github.io/hotshell)
+is a command-line application to efficiently recall and share commands.
+
+`hotshell-util` aims to factor and distribute a common set of patterns.
+
 # Content
 
   - [Patterns](#patterns)
     * [Prompt](#prompt)
-  - [How to use](#how-to-use)
+  - [Import hotshell-util](#import-hotshell-util)
 
 
 ## Patterns
 
 ### Prompt
 
-Prompt for inputs
+Prompt for inputs before executing a command:
+
+![demo](doc/prompt-demo.gif)
+
+See [demo source code](./examples/prompt/hs.js).
+
+Usage:
 
 ```javascript
 prompt({
@@ -26,15 +37,7 @@ prompt({
 })
 ```
 
-Generates
-
-```bash
-echo -n "location: "; read l; echo -n "pattern: "; read p; grep -rnws $l -e $p
-```
-
-See [complete example](./examples/prompt/hs.js).
-
-## How to use
+## Import hotshell-util
 
 ### Using Node
 
