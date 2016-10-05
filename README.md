@@ -16,13 +16,13 @@
 Prompt for inputs
 
 ```javascript
-item({key: 'f', desc: 'find text in files', cmd: prompt({
-        vars: [
-            {name: 'l', prompt: 'location'}, // prompt for location of files
-            {name: 'p', prompt: 'pattern'} // prompt for pattern to look for
-        ],
-        cmd: 'grep -rnws $l -e $p', // search for pattern 'p' traversing files rooted at 'l'
-    })
+prompt({
+    key: 'f', desc: 'find text in files',
+    vars: [
+        {name: 'l', prompt: 'location'}, // prompt for location of files
+        {name: 'p', prompt: 'pattern'} // prompt for pattern to look for
+    ],
+    cmd: 'grep -rnws $l -e $p' // search for pattern 'p' traversing files rooted at 'l'
 })
 ```
 

@@ -1,7 +1,8 @@
 exports.prompt = function (config) {
-    var cmd = '';
+    var cmd = ''
     _(config.vars).each(function (el) {
-        cmd += 'echo -n "' + el.prompt + ': "; read ' + el.name + '; ';
+        cmd += 'echo -n "' + el.prompt + ': "; read ' + el.name + '; '
     })
-    return cmd + config.cmd;
+    config.cmd = cmd + config.cmd;
+    item(config)
 }
