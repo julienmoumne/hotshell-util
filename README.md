@@ -18,11 +18,7 @@ is a command-line application to efficiently recall and share commands.
 
 ### Prompt
 
-Prompt for inputs before executing a command:
-
-![demo](doc/prompt-demo.gif)
-
-See [demo source code](./examples/prompt/hs.js).
+> Prompt for inputs before executing a command.
 
 Usage:
 
@@ -36,6 +32,12 @@ prompt({
     cmd: 'grep -rnws $l -e $p' // search for pattern 'p' traversing files rooted at 'l'
 })
 ```
+
+Demo:
+
+![demo](doc/prompt-demo.gif)
+
+See [demo source code](./examples/prompt/hs.js).
 
 ## Import hotshell-util
 
