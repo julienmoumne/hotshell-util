@@ -75,8 +75,8 @@ In the meantime, here are two solutions if you do not have a Node environment.
 
 #### Copy the file
 
-Copy `util.hotshell.js` along your `hs.js` file and import it using `var util = require('./util.hotshell.js')`.
+Copy `util.hs.js` along your `hs.js` file and import it using `var util = require('./util.hs.js')`.
 
 #### Symlink the project
 
-Clone `hotshell-util`, symlink `util.hotshell.js` along your `hs.js` file and import it using `var util = require('./util.hotshell.js')`.
+Clone `hotshell-util`, symlink `util.hs.js` along your `hs.js` file and import it using `var util = require('./util.hs.js')`.

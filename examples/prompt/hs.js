@@ -1,4 +1,4 @@
-var prompt = require('../../util.hotshell.js').prompt
+var prompt = require('../../util.hs.js').prompt
 
 item({desc: 'prompt'}, function () {
 

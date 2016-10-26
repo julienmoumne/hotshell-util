@@ -1,4 +1,4 @@
-var confirm = require('../../util.hotshell.js').confirm
+var confirm = require('../../util.hs.js').confirm
 
 item({desc: 'confirm'}, function () {
     confirm({

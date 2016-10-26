@@ -2,7 +2,7 @@
   "name": "hotshell-util",
   "version": "0.1.2",
   "description": "A collection of common Hotshell patterns",
-  "main": "util.hotshell.js",
+  "main": "util.hs.js",
   "directories": {
     "example": "examples"
   },
