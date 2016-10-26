@@ -6,3 +6,12 @@ exports.prompt = function (config) {
     config.cmd = cmd + config.cmd;
     item(config)
 }
+
+exports.confirm = function (config) {
+    config.cmd =
+        'read -r -p "Are you sure? [y/n] " resp; ' +
+        'if [[ $resp = y ]]; ' +
+        'then ' + config.cmd + '; ' +
+        'fi';
+    item(config)
+}

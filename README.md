@@ -11,6 +11,7 @@ is a command-line application to efficiently recall and share commands.
 
   - [Patterns](#patterns)
     * [Prompt](#prompt)
+    * [Confirm](#confirm)
   - [Import hotshell-util](#import-hotshell-util)
 
 
@@ -38,6 +39,21 @@ Demo:
 ![demo](doc/prompt-demo.gif)
 
 See [demo source code](./examples/prompt/hs.js).
+
+### Confirm
+
+> "Are you sure? [y/n]"
+
+Usage:
+
+```javascript
+confirm({
+    key: 'o', desc: 'open hotshell website',
+    cmd: 'open http://julienmoumne.github.io/hotshell'
+})
+```
+
+See [demo source code](./examples/confirm/hs.js).
 
 ## Import hotshell-util
 
