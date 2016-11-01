@@ -7,7 +7,7 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha util.hs.test.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/julienmoumne/hotshell-util/issues"
   },
-  "homepage": "https://github.com/julienmoumne/hotshell-util"
+  "homepage": "https://github.com/julienmoumne/hotshell-util",
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "rewire": "^2.5.2",
+    "underscore": "^1.8.3"
+  }
 }
