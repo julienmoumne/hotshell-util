@@ -14,7 +14,7 @@ describe('util', function () {
                 {
                     key: 't',
                     desc: 'desc',
-                    cmd: 'read -r -p "Are you sure? [y/n] " resp; if [[ $resp = y ]]; then cmd; fi'
+                    cmd: 'BUG read -r -p "Are you sure? [y/n] " resp; if [[ $resp = y ]]; then cmd; fi'
                 },
                 util.result
             );
