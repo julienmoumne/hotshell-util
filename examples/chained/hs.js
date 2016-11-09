@@ -17,4 +17,13 @@ item({desc: 'chained'}, function () {
             vars: [{name: 'l', prompt: 'location'}],
         }, false)
     )
+    // factor the chain
+    confirmThenPrompt({
+        key: 'f', desc: 'open a website - ask for confirmation then prompt for URL',
+        cmd: 'open $l',
+        vars: [{name: 'l', prompt: 'location'}],
+    })
+    function confirmThenPrompt(config) {
+        confirm(prompt(config, false))
+    }
 })
