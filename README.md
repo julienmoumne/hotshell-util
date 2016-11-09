@@ -12,6 +12,7 @@ is a command-line application to efficiently recall and share commands.
   - [Patterns](#patterns)
     * [Prompt](#prompt)
     * [Confirm](#confirm)
+  - [Tips](#tips)
   - [Import hotshell-util](#import-hotshell-util)
 
 
@@ -34,10 +35,6 @@ prompt({
 })
 ```
 
-Demo:
-
-![demo](doc/prompt-demo.gif)
-
 See [demo source code](./examples/prompt/hs.js).
 
 ### Confirm
@@ -54,6 +51,24 @@ confirm({
 ```
 
 See [demo source code](./examples/confirm/hs.js).
+
+## Tips
+
+### Chain patterns
+
+> Prompt for input then ask for confirmation
+
+```javascript
+prompt(
+    confirm({
+        key: 'p', desc: 'open a website - prompt for URL then ask for confirmation',
+        cmd: 'open $l',
+        vars: [{name: 'l', prompt: 'location'}],
+    }, false)
+)
+```
+
+See [demo source code](./examples/chained/hs.js).
 
 ## Import hotshell-util
 

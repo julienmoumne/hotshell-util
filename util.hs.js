@@ -4,7 +4,8 @@ exports.prompt = function (config) {
         cmd += 'echo -n "' + el.prompt + ': "; read ' + el.name + '; '
     })
     config.cmd = cmd + config.cmd;
-    item(config)
+
+    return addItem(config, arguments)
 }
 
 exports.confirm = function (config) {
@@ -13,5 +14,13 @@ exports.confirm = function (config) {
         'if [[ $resp = y ]]; ' +
         'then ' + config.cmd + '; ' +
         'fi';
-    item(config)
+    
+    return addItem(config, arguments)
+}
+
+function addItem(config, args) {
+    var addItem = (args[1] !== void 0 ? args[1] : true);
+    if(addItem)
+        item(config)
+    return config
 }
