@@ -1,3 +1,6 @@
+var _ = require('underscore')
+var item = require('hotshell').item
+
 exports.prompt = function (config) {
     var cmd = ''
     _(config.vars).each(function (el) {

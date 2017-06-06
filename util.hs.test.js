@@ -1,10 +1,11 @@
+var mock = require('mock-require');
 var assert = require('assert');
-var util = require("rewire")('./util.hs.js');
 
-util.__set__("_", require('underscore'));
-util.__set__("item", function item(config) {
+mock('hotshell', { item: function item(config) {
     util.results.push(config);
-});
+}});
+
+var util = require('./util.hs.js');
 
 beforeEach(function() {
     util.results = []
@@ -50,6 +51,6 @@ describe('util', function () {
 });
 
 function validateConfig(expected, actual) {
-    assert.deepEqual(expected, actual);
-    assert.deepEqual([expected], util.results);
+    assert.deepEqual(actual, expected);
+    assert.deepEqual(util.results, [expected]);
 }
