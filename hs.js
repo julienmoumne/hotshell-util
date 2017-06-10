@@ -12,6 +12,7 @@ item({desc: 'hotshell-util'}, function () {
     })
     item({key: 't', desc: 'run tests', cmd: 'npm test'})
     item({key: 'i', desc: 'install dependencies', cmd: 'npm install'})
+    item({key: 'r', desc: 'release new version', cmd: './release.sh'})
 })
 
 function basename(path) {
